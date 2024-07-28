@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lan du 30 novembre</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+    <header>
+        <h1>Lan du 30 novembre</h1>
+        <div class="filters">
+            <label for="players">Nombre de joueurs:</label>
+            <select id="players">
+                <option value="all">Tous</option>
+                <option value="2">2 joueurs</option>
+                <option value="3">3 joueurs</option>
+                <option selected value="4">4 joueurs</option>
+                <option value="5">5 joueurs</option>
+                <option value="6">6 joueurs</option>
+                <option value="7">7 joueurs</option>
+                <option value="8+">8 joueurs et plus</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <div class="game-cards" id="game-cards">
+        </div>
+    </main>
+
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <video id="modalVideo" controls></video>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
